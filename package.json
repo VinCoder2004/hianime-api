@@ -1,3 +1,4 @@
+```json
 {
   "name": "hianime-v2",
   "version": "2.2.0",
@@ -29,7 +30,7 @@
   "dependencies": {
     "@hono/node-server": "^1.8.2",
     "axios": "^1.13.6",
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0-rc.12",
     "esbuild": "^0.28.0",
     "hono": "^4.12.5"
   },
@@ -54,3 +55,4 @@
     "vitest": "^4.1.1"
   }
 }
+```
