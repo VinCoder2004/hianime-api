@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "outputDirectory": ".",
+  "buildCommand": "npm run vercel-build",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/api/index.js"
+      "destination": "/api/_handler"
     }
   ]
 }
