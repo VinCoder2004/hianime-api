@@ -24,12 +24,14 @@
     "test:jest": "NODE_OPTIONS='--experimental-vm-modules' jest",
     "test:all": "bun run test && bun run test:jest",
     "clean": "rm -rf dist node_modules/.cache",
-    "vercel-build": "ncc build api/index.ts -o api"
+    "vercel-build": "esbuild api/_handler.ts --bundle --platform=node --format=cjs --outfile=api/index.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.2",
     "axios": "^1.13.6",
     "cheerio": "^1.0.0-rc.12"
+    "esbuild": "^0.28.0",
+    "hono": "^4.12.5"
   },
   "devDependencies": {
     "@types/axios": "^0.14.4",
